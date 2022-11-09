@@ -63,14 +63,14 @@ namespace Практическая3
         }
         static void FirstFunction(double x) // Решение первой функции
         {
-            //double result = ((MathFunctions.Sin(x) + MathFunctions.Cos(x)) + MathFunctions.Cos(x)) * ((MathFunctions.Sin(x) + MathFunctions.Cos(x)) + MathFunctions.Cos(x));
-            double result = ((SinPlug() + CosPlug()) + CosPlug()) * ((SinPlug() + CosPlug()) + CosPlug());
+            double result = ((MathFunctions.Sin(x) + MathFunctions.Cos(x)) + MathFunctions.Cos(x)) * ((MathFunctions.Sin(x) + MathFunctions.Cos(x)) + MathFunctions.Cos(x));
+            // double result = ((SinPlug() + CosPlug()) + CosPlug()) * ((SinPlug() + CosPlug()) + CosPlug());
             Console.WriteLine("((sin({0}) + cos({0})) + cos({0}))^2 = {1}", x, result); ;
         }
         static void SecondlyFunction(double x) // Решение второй функции
         {
-            // double result = MathFunctions.log(Math.E, x) * MathFunctions.log(5, x);
-            double result = logPlug() * logPlug();
+            double result = MathFunctions.log(Math.E, x) * MathFunctions.log(5, x);
+            // double result = logPlug() * logPlug();
             Console.WriteLine("ln({0})*log5({0}) = {1}", x, result);
         }
 
